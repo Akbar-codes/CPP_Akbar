@@ -1,0 +1,24 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{    clrscr();
+	int num, sumneg, sumeven, sumodd;
+	sumneg=sumeven=sumodd=0;
+	char ch;
+	do
+	{   cout<<"\n\n\t\t Enter the number : ";
+	      cin>>num;
+	if(num < 0)
+	    sumneg += num;
+	else if(num % 2 == 0)
+	    sumeven += num;
+	else
+	    sumodd += num;
+	    cout<<"\n\t\t Want to enter more ? ";
+	      cin>>ch;
+	}while(ch=='y'||ch=='Y');
+	    cout<<"\n\t\t The sum of negative numbers is "<<sumneg<<" . ";
+	    cout<<"\n\t\t The sum of positive even numbers is "<<sumeven<<" . ";
+	    cout<<"\n\t\t The sum of positive odd numbers is "<<sumodd<<" . ";
+     getch();
+}

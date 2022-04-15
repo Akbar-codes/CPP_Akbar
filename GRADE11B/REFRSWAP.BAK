@@ -1,0 +1,26 @@
+/*     This program accepts two numbers for two values for two
+    variables and swaps their values by call-by-reference(original
+			     values get changed).                          */
+#include<iostream.h>
+#include<conio.h>
+void main()
+{    clrscr();
+	void swap(int&, int&); // func. prototype.
+	int a,b;
+	   a=7;
+	   b=4;
+	   cout<<"\n\t\t The original values are : ";
+	   cout<<"\n\t\t a = "<<a<<",b = "<<b;
+	   swap(a,b);         // func. called.
+	   cout<<"\n\t\t Values after swap are : ";
+	   cout<<"\n\t\t a = "<<a<<",b = "<<b;
+     getch();
+}
+void swap( int &x, int &y )  //function definition.
+{    int temp;
+	 temp=x;
+	 x=y;
+	 y=temp;
+	 cout<<"\n\t\tThe values after swapping are : ";
+	 cout<<"\n\t\t a = "<<x<<",b = "<<y;
+}

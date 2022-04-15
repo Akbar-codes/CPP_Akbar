@@ -1,0 +1,18 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{    clrscr();
+	float cube(float);//function prototype declared.
+	float x;
+	      cout<<"\n\t Enter the number whose cube is to be calculated : ";
+		cin>>x;
+	      cube(x);//callin of function
+	      cout<<"\n\t The cube of "<<x<<" is "<<cube(x);
+     getch();
+}    //end of main
+float cube(float a)
+{
+	float n;
+	n=a*a*a;
+	return(n);
+}

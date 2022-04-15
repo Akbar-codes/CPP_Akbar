@@ -1,0 +1,16 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{    clrscr();
+	char ch;
+	     cout<<"\n\n\t\t SYMBOL IDENTIFIER ";
+	     cout<<"\n\n\t\t Enter the symbol : ";
+	       cin>>ch;
+	if((ch>='A')&&(ch<='Z')||(ch>='a')&&(ch<'z'))
+	     cout<<"\n\t\t You entered an alphabet ";
+	 else if((ch>=0)&&(ch<=9))
+		   cout<<"\n\t\t You entered a numeric digit ";
+	  else
+	       cout<<"\n\t\t You entered a special symbol ";
+     getch();
+}

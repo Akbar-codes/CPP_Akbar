@@ -1,0 +1,43 @@
+#include<iostream.h>
+#include<conio.h>
+#include<math.h>
+#include<process.h>
+void main()
+{    clrscr();
+     char ch,ch2;
+     float l,b,p,a,d;
+	   cout<<"\n\t Rectangle Menu ";
+	   cout<<"\n\n\t 1) Area ";
+	   cout<<"\n\t 2) Perimeter ";
+	   cout<<"\n\t 3) Diagonal ";
+	   cout<<"\n\t 4) Exit ";
+	   cout<<"\n\t Enter your choice : ";
+     do
+     {       cin>>ch;
+     if((ch=='1')||(ch=='2')||(ch=='3'))
+	  { cout<<"\n\n\t\t Enter length and breadth : ";
+	     cin>>l>>b;
+	  }
+     switch(ch)
+	   { case '1' : a=l*b;
+			cout<<"\n\t\t\t Area = "<<a;
+			break;
+	     case '2' : p=2*(l+b);
+			cout<<"\n\t\t\t Perimeter = "<<p;
+			break;
+	     case '3' : d=sqrt((l*l)+(b*b));
+			cout<<"\n\t\t\t Diagonal = "<<d;
+			break;
+	     case '4' : cout<<"\n\t\t\t Breaking ";
+			exit(0);
+	      default : cout<<"\n\t\t\t Wrong choice !! "
+			    <<"\n\t\t\t Enter a valid one ";
+			break;
+	   }                  //switch ends
+	   cout<<"\n\n\t\t Want to enter more(y/n) ? ";
+	     cin>>ch2;
+     if(ch2=='y'||ch2=='Y')
+	   cout<<"\n\n\t\t Enter choice again : ";
+     }while(ch2=='y'||ch2=='Y');//do-while ends
+     getch();
+}

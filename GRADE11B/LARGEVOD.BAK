@@ -1,0 +1,20 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{    clrscr();
+	int num,leven=0,lodd=1;
+	    cout<<"\n\n\t\t Enter numbers (0 to terminate) ";
+	do
+	{     cin>>num;
+	if(num%2==0)
+	{  if(num>leven)
+	   leven=num;
+	}
+	else
+	if(num>lodd)
+	   lodd=num;
+	}while(num!=0);
+	    cout<<"\n\t\t Largest even number = "<<leven;
+	    cout<<"\n\t\t Largest odd number = "<<lodd;
+     getch();
+}

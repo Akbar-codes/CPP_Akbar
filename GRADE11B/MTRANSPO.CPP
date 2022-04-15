@@ -1,0 +1,41 @@
+/*            This program accepts a matrix and then transposes
+				 the elements.  			    */
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+     clrscr();
+	int a[20][20],b[20][20],i,j,m,n;
+	   cout<<"\n\n\n\t\t\t MATRIX TRANSPOSER ";
+	   cout<<"\n\n\t\t Enter row & column of matrix A : ";
+	    cin>>m>>n;
+	   cout<<"\n\t\t Input matrix A : \n";
+	   for(i=0;i<m;++i)
+	      {
+	       for(j=0;j<n;++j)
+		  {
+			cout<<"\n\n\t\t Enter elements a "<<i+1<<" "<<j+1<<" : ";
+			 cin>>a[i][j];
+		  }
+	      }
+	   cout<<"\n\t\t MATRIX A : ";
+	   for(i=0;i<m;++i)
+	      {
+		 cout<<"\n";
+		 for(j=0;j<n;++j)
+		 cout<<" "<<a[i][j];
+	      }
+	   for(i=0;i<n;++i)
+	   {
+	     for(j=0;j<m;++j)
+	     b[i][j] = a[j][i];
+	   }
+	   cout<<"\n\t\t Transpose of matrix is : \n";
+	   for(i=0;i<n;++i)
+	   {
+	     for(j=0;j<m;++j)
+	     cout<<" "<<b[i][j];
+	     cout<<"\n";
+	   }
+     getch();
+}

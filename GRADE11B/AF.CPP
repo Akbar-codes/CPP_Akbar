@@ -1,0 +1,11 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{   clrscr();
+    long i,n;
+	cout<<"\n\t\t enter the number : ";
+	  cin>>n;
+     for(i=1;i<=n;++i)
+	 cout<<"\n"<<" value is "<<i;
+    getch();
+}
