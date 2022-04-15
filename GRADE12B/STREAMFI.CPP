@@ -1,0 +1,27 @@
+#include<iostream.h>
+#include<conio.h>
+#include<fstream.h>
+#include<string.h>
+#include<stdio.h>
+void WORD4CHAR();
+void WORD4CHAR()
+{
+ ifstream fin;
+ char word[30];
+ while(!fin.eof())
+ {     fin>>word;
+       if(strlen(word)==4)
+       cout<<word<<" ";
+ }
+ fin.close();
+}
+void main()
+{
+     clrscr();
+     ofstream fout;
+     char t[30];
+     cout<<" Enter ";
+     gets(t);
+     WORD4CHAR();
+     getch();
+}
